@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARSTRIKER // MUSIC</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://starstriker.vescence.xyz/music">
+    <meta property="og:title" content="STARSTRIKER // MUSIC">
+    <meta name="theme-color" content="#FFFFFF">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/></svg>">
+    
+    <style>
+        @font-face {
+            font-family: 'CenturyGothicItalic';
+            src: url('century-gothic-italic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        header {
+            position: relative;
+            padding-top: 30px;
+            min-height: 100px;
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .brand-container {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            pointer-events: none;
+        }
+
+        .nav-container {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .highlight-text {
+            font-family: 'CenturyGothicItalic', sans-serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            letter-spacing: 1.2px;
+            color: #000000;
+            background-color: #ffffff;
+            padding: 2px 6px;
+            line-height: 1; 
+            display: inline-block;
+            text-transform: uppercase;
+            vertical-align: top;
+            text-decoration: none;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -4px; 
+            height: 2px;
+            background-color: transparent;
+            transition: background-color 0.1s;
+        }
+
+        .nav-link:hover::after {
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+        .header-line {
+            position: absolute;
+            top: 80px;
+            left: 30px;
+            right: 30px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+
+        main {
+            flex: 1;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .album-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Centers items vertically within the row */
+            gap: 20px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .album-art-link {
+            flex-shrink: 0;
+            height: 140px;
+        }
+
+        .album-image {
+            width: 140px; 
+            height: 140px;
+            border: 2px solid #ffffff;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .album-details-horizontal {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Centers text and player vertically */
+            gap: 30px;
+            flex-grow: 1;
+            height: 140px;
+        }
+
+        .text-stack {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers the text block vertically */
+            gap: 5px;
+            flex-shrink: 0;
+            text-align: left;
+        }
+
+        .player-container {
+            flex-grow: 1;
+            height: 140px;
+            display: flex;
+            align-items: center; /* Centers the iframe player inside its container */
+        }
+
+        .player-container iframe {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .small-highlight {
+            font-size: 0.8rem;
+            letter-spacing: 0.8px;
+            padding: 1px 4px;
+        }
+
+        footer {
+            padding: 20px 30px;
+            width: 100%;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 900px) {
+            .album-details-horizontal {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                height: auto;
+            }
+            .player-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-container">
+            <span class="highlight-text">STARSTRIKER</span>
+        </div>
+
+        <nav class="nav-container">
+            <a href="https://starstriker.vescence.xyz/" class="nav-link highlight-text">HOME</a>
+            <a href="https://starstriker.vescence.xyz/socials" class="nav-link highlight-text">SOCIALS</a>
+        </nav>
+
+        <div class="header-line"></div>
+    </header>
+
+    <main>
+        <div class="album-row">
+            <a href="https://starstriker.bandcamp.com/album/blue-money" target="_blank" class="album-art-link">
+                <img src="https://f4.bcbits.com/img/a2827531189_10.jpg" alt="BLUE MONEY" class="album-image">
+            </a>
+            
+            <div class="album-details-horizontal">
+                <div class="text-stack">
+                    <div><span class="highlight-text">BLUE MONEY</span></div>
+                    <div><span class="highlight-text small-highlight">JANUARY 2 1902 / APRIL 17 2026</span></div>
+                    <div><span class="highlight-text small-highlight">LISTEN ON BANDCAMP</span></div>
+                </div>
+                
+                <div class="player-container">
+                    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2859664916/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless>
+                        <a href="https://starstriker.bandcamp.com/album/blue-money">Blue Money by Starstriker</a>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span class="highlight-text footer-text">© 2026 // STARSTRIKER</span>
+    </footer>
+</body>
+</html>
